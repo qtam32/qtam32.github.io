@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" width="125px" alt="LOGO SHOP"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="img/cart.png" width="30px" height="30px"></a>
+            <img src="img/menu.png" class="menu-icon">
+        </div>
+    </div>
+<!--------------------------Account-------------------------------->
+    <div class="account-page">  
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="img/logoo.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                       <div class="form-btn">
+                           <span onclick="login()">Đăng Nhập</span>
+                           <span onclick="register()">Đăng Kí</span>
+                           <hr id="Indicator">
+                       </div> 
+                       <form id="LoginForm">
+                           <input type="text" placeholder="Tên đăng nhập">
+                           <input type="password" placeholder="Mật khẩu">
+                           <button type="submit" class="btn">Đăng nhập</button>
+                           <a href="">Quên mật khẩu</a>
+                       </form>
+                       <form id="RegForm">
+                           <input type="text" placeholder="Tên đăng nhập">
+                           <input type="email" placeholder="Email">
+                           <input type="password" placeholder="Mật khẩu">
+                           <button type="submit" class="btn">Đăng Kí</button> 
+                       </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------------------Footer--------------------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android anh ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="img/app-store.png">
+                        <img src="img/play-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/logo.png">
+                    <p>Địa Chỉ: 32 Lê Thánh Tôn, Phường Bến Nghé, Quận 1, TPHCM</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Liên Kết Hữu Ích</h3>
+                    <ul>
+                        <li>Phiếu giảm giá</li>
+                        <li>Bài viết trên Blog</li>
+                        <li>Chính sách hoàn trả</li>
+                        <li>Tham gia cộng đồng</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Theo Dõi Chúng Tôi</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="coppyright">Coppyright 2021-QuangTam</p>
+        </div>
+    </div>
+<!-------------------------JavaScirpy------------------------->
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+            function register(){
+                RegForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(100px)";
+            }
+            function login(){
+                RegForm.style.transform = "translateX(300px)";
+                LoginForm.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(0px)";
+            }
+    </script>
+
+
+</body>
+</html>
